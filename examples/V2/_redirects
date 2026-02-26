@@ -1,0 +1,13 @@
+# CLOUDFLARE PAGES REDIRECTS VERSION 2.0 by IND_is_Here
+# GGs to functions/_middleware.js
+
+# OFFICIAL DOCS: https://developers.cloudflare.com/pages/configuration/redirects/
+
+
+# HOW IT WORKS?
+
+# TIP: You need to REMOVE <> AFTER putting the url there with http:// or https://
+# * = everything
+# :splat makes it so anything after your source domain gets appended to the destination domain.
+# <PUT source url here> <PUT destination url here> <PUT status code here(301-308)>
+https://*.pages.dev/* https://www.inds.space/:splat 301
