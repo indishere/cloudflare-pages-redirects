@@ -9,7 +9,9 @@ export async function onRequest(context) {
   // This ensures users and search engines always land on my domain,
   // even if they access the default Cloudflare Pages preview URL.
   // Using a 308 redirect preserves the HTTP method and request body.
-  if (host.endsWith(".pages.dev")) {
+  // PUT the source domain here with 'host' only OR host.endsWith in my case.
+  if (host.endsWith(".pages.dev")) { 
+    // PUT the destination domain here.
     url.hostname = "inds.space";
     return Response.redirect(url.toString(), 308);
   }
